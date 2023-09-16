@@ -1,0 +1,20 @@
+#text{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:768px){
+    #text {
+        gap: 5px;
+        display: grid;
+        align-items: center;
+        text-align: center;
+     }
+     
+     #icons{
+        display: flex;
+     }
+}

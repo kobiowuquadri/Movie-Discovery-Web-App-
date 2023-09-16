@@ -1,0 +1,10 @@
+#card {
+    height: 550px;
+    align-items: flex-start;
+}
+
+@media(max-width:768px){
+    #card {
+        height: 400px;
+    }
+}

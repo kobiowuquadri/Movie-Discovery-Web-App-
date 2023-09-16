@@ -1,0 +1,144 @@
+.header_section {
+  background: url("../../Assets/Images/bgImage.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.navbar_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  align-items: center;
+
+  & #logo {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-decoration: none;
+
+    & #logo_text {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  & .search {
+    position: relative;
+    border: 1px solid white;
+    width: 30%;
+    border-radius: 10px;
+    padding: 5px;
+
+    & span {
+      position: absolute;
+      right: 5px;
+      font-size: 1rem;
+    }
+
+    & input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: #be123c;
+      font: 1.2rem;
+    }
+  }
+
+  & ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: white;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 50px 40px;
+  width: 30%;
+  color: white;
+  gap: 10px;
+
+  & h1 {
+    font-size: 3rem;
+  }
+
+  & #img {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+  }
+
+  & p {
+    font-size: 1.2rem;
+  }
+
+  & #btn {
+    background: #be123c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+    .header_section {
+        padding: .5rem .5rem;
+    }
+  .navbar_section {
+    padding: 0.5rem 1rem;
+
+    & #logo {
+      gap: 10px;
+      width: 50%;
+
+      & #logo_text {
+        font-size: 1rem;
+      }
+    }
+
+    & .search {
+      width: 50%;
+    }
+
+    & ul {
+      display: none;
+    }
+  }
+
+  .main {
+    width: 100%;
+    padding: 80px 10px 10px 10px;
+
+    & #img {
+        margin-top: -5%;
+        margin-bottom: -5%;
+    }
+
+    & h1 {
+        font-size: 2.7rem;
+        padding: 10px;
+    }
+
+    & p {
+      padding: 10px;
+    }
+
+    & #btn {
+      margin-left: 10px;
+    }
+  }
+}
